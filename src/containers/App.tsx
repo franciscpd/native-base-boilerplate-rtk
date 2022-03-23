@@ -1,13 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
 import React from 'react';
 import {
   Link,
@@ -21,11 +11,12 @@ import {
   VStack,
   Code,
 } from 'native-base';
-import NativeBaseIcon from './src/components/NativeBaseIcon';
+
+import NativeBaseIcon from '@app/components/NativeBaseIcon';
 
 // Color Switch Component
 function ToggleDarkMode() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const {colorMode, toggleColorMode} = useColorMode();
   return (
     <HStack space={2} alignItems="center">
       <Text>Dark</Text>
@@ -44,13 +35,13 @@ const App = () => {
   return (
     <NativeBaseProvider>
       <Center
-        _dark={{ bg: 'blueGray.900' }}
-        _light={{ bg: 'blueGray.50' }}
+        _dark={{bg: 'blueGray.900'}}
+        _light={{bg: 'blueGray.50'}}
         px={4}
         flex={1}>
         <VStack space={5} alignItems="center">
           <NativeBaseIcon />
-          <Heading size="lg">Welcome to NativeBase</Heading>
+          <Heading size="lg">Welcome to NativeBoilerplate</Heading>
           <HStack space={2} alignItems="center">
             <Text>Edit</Text>
             <Code>App.tsx</Code>
